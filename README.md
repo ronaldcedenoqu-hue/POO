@@ -1,11 +1,11 @@
-# POO
-Actividades de la materia Programacion Orientada A Objetos
+# POO  
+Actividades de la materia Programación Orientada a Objetos  
 
+```java
 public class CuentaBancaria {
     private double saldo;
 
-
-   //Con este metodo se deposita el dinero en la cuenta bancaria, hacemos que el monto sea si o si positivo y se realiza la suma.
+    // Con este metodo se deposita el dinero en la cuenta bancaria
     public void depositar(double monto) {
         if (monto > 0) {
             saldo += monto;
@@ -14,7 +14,7 @@ public class CuentaBancaria {
         }
     }
 
-    //Ahora con este metodo retiramos el dinero de la cuenta, tambien que no se pueda retirar mas de lo que hay en la cuenta
+    // Metodo para retirar dinero de la cuenta
     public void retirar(double monto) {
         if (monto > saldo) {
             System.out.println("No se puede retirar más de lo disponible.");
@@ -25,16 +25,17 @@ public class CuentaBancaria {
         }
     }
 
-    // Metodo para ver o consultar nuestro saldo
+    // Metodo para consultar saldo
     public double getSaldo() {
         return saldo;
     }
 
-    // Ahora con el metodo main probamos los anteriores
+    // Metodo main para probar
     public static void main(String[] args) {
         CuentaBancaria cuenta = new CuentaBancaria();
         cuenta.depositar(700);
         cuenta.retirar(200);
-        System.out.println("Saldo: " + cuenta.getSaldo()); // deberia imprimir 500 si esta bien
+        System.out.println("Saldo: " + cuenta.getSaldo());
     }
 }
+
