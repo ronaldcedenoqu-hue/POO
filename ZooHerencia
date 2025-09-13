@@ -1,0 +1,46 @@
+# 🐾 ZooHerencia
+
+Proyecto en **Java** hecho en IntelliJ IDEA para practicar **Herencia, Composición, Genéricos y Casting**.  
+
+---
+
+## 📂 Estructura del proyecto
+ZooHerencia/
+┣ src/
+┃ ┣ Animal.java
+┃ ┣ Perro.java
+┃ ┣ Gato.java
+┃ ┣ Collar.java
+┃ ┣ Consultorio.java
+┃ ┣ Veterinaria.java
+┃ ┣ Caja.java
+┃ ┗ Main.java
+
+
+---
+
+## ⚡ Clases principales
+
+- **Animal** → clase base con atributo `nombre` y método `sonido()`.
+- **Perro y Gato** → heredan de `Animal` y sobrescriben `sonido()`.
+- **Collar** → clase usada en composición dentro de `Perro`.
+- **Consultorio** → clase usada en composición dentro de `Veterinaria`.
+- **Veterinaria** → atiende a cualquier `Animal`.
+- **Caja<T>** → clase genérica para guardar un objeto.
+- **Main** → pruebas de herencia, polimorfismo, genéricos y casting.
+
+---
+
+## 🧪 Ejecución
+
+Ejecuta la clase **Main**.  
+La salida esperada es:
+
+El perro tiene un collar de cuero
+Atendiendo en consultorio #101
+Rocky ladra: ¡Guau Guau!
+Atendiendo en consultorio #101
+Michi maúlla: ¡Miau Miau!
+Rocky ladra: ¡Guau Guau!
+Se casteó a Perro: Firulais
+El perro tiene un collar de metal
